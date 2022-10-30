@@ -1,0 +1,26 @@
+/*
+ * LCD_Types.h
+ *
+ *  Created on: Aug 31, 2022
+ *      Author: Khaled
+ */
+
+#ifndef SOURCE_02_ECUA_LCD_INC_LCD_TYPES_H_
+#define SOURCE_02_ECUA_LCD_INC_LCD_TYPES_H_
+
+typedef enum
+{
+	LCD_CLEAR = 0x01,
+	LCD_CURSOR_OFF = 0x0C,
+	LCD_CURSOR_ON = 0x0F,
+	LCD_4BIT_MODE = 0x28,
+	LCD_8BIT_MODE = 0x38,
+	LCD_ON = 0x0F,
+	LCD_CURSOR_UNDERLINE = 0x0E,
+	LCD_CURSOR_SHIFT_LEFT = 0x10,
+	LCD_CURSOR_SHIFT_RIGHT = 0x14,
+	LCD_CURSOR_INCREMENT = 0x06,
+	LCD_CGRAM_START_ADDRESS = 0x40
+}lcd_Cmd_t;
+
+#endif /* SOURCE_02_ECUA_LCD_INC_LCD_TYPES_H_ */
